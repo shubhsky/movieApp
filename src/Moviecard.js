@@ -2,18 +2,7 @@ import React from "react";
 import {avengers} from './images/index'
 
 export class MovieCard extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            title:'The Avengers!',
-            plot:'Supernatural powers shown in the movie.',
-            price:'199',
-            rating:'8.9',
-            stars: 0
-        }
-        // this.addStars = this.addStars.bind(this)
-        this.decStars = this.decStars.bind(this)
-    }
+    
 
     // if we are using arrow function then we dont need to bind the this as it is already binded by arror func
     addStars=()=>{
@@ -37,7 +26,7 @@ export class MovieCard extends React.Component{
         });
 
     }
-    decStars(){
+    decStars=()=>{
         if (this.state.stars<=0){
             return
         }
@@ -45,9 +34,22 @@ export class MovieCard extends React.Component{
             stars:this.state.stars -= 0.5
         })
     }
+
+    handleFav =()=>{
+        this.setState({
+            fav: !this.state.fav
+        })
+    }
+
+    handleCart=()=>{
+        this.setState({
+            isIncart:!this.state.isIncart
+        })
+    }
+
     render(){
         // destructuring
-        const {title,plot,price,rating,stars} = this.state
+        const {title,plot,price,rating,stars,fav,isIncart} = this.props;
         return (
             <div className="main">
                 <div className="movie-card">
@@ -66,8 +68,11 @@ export class MovieCard extends React.Component{
                                 <img className="str-btn" alt="increase" src="https://cdn-icons-png.flaticon.com/128/3524/3524388.png" onClick={this.addStars}/>
                                 <span className="starCount">{stars}</span>
                             </div>
-                            <button className="favourite-btn">Favourite</button>
-                            <button className="cart-btn">Add to Cart</button>
+                            {/* {fav?<button className="unfavourite-btn" onClick={this.handleFav}>Un-favourite</button>:<button className="favourite-btn" onClick={this.handleFav}>Favourite</button>} */}
+
+                            <button className={fav?"unfavourite-btn":'favourite-btn'} onClick={this.handleFav}>{fav?"UnFavourite":'Favourite'}</button>
+
+                            <button className={isIncart?"cart-btn":'remove-cart'} onClick={this.handleCart}>{isIncart?'Add to Cart':'Remove from Cart'}</button>
                         </div>
                     </div>
                 </div>
