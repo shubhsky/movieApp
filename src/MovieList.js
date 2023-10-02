@@ -141,7 +141,7 @@ class MovieList extends Component{
         const {movies}=this.state;
         return(
             <>
-                {movies.map((movie,index)=><MovieCard key={index} movies = {movie} addStars = {this.handleIncStar} decStars = {this.handleDecStar} handleFav={this.handleFav} handleCart={this.handleCart}/>)}
+                {movies.map((movie,index)=><MovieCard key={index} movie = {movie} addStars = {this.handleIncStar} decStars = {this.handleDecStar} handleFav={this.handleFav} handleCart={this.handleCart}/>)}
             </>
         )
     }
