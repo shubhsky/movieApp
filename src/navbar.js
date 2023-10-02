@@ -5,11 +5,11 @@ import styled from 'styled-components';
 // Styled Component
 const Nav = styled.div`
     height:70px;
-    background-color:cadetblue;
+    background:linear-gradient(90deg, #003366, #007f5f);
     display:flex;
     justify-content:space-between;
     align-items:center;
-    position:relative
+    position:relative;
 `;
 
 const Title = styled.div`
@@ -18,7 +18,8 @@ const Title = styled.div`
     fontWeight:600;
     font-family:"Montserrat",sans-serif;
     text-transform:uppercase;
-    margin-left:20px
+    margin-left:20px;
+    &:hover{color:#07f;font-size:32px}
 `;
 
 const CartContainer = styled.div`
@@ -32,13 +33,14 @@ const CartIcon = styled.img`
 `
 
 const CartCount = styled.span`
-    background-color:orange;
+    background-color:${(props)=>props.color};
     border-radius:50%;
     padding:4px 8px;
     position:absolute;
     right:10px;
     top:-5px;
-    font-size:12px
+    font-size:12px;
+    visibility:${(props)=>props.show?'visible':'hidden'}
 `
 
 class Navbar extends React.Component{
@@ -49,7 +51,7 @@ class Navbar extends React.Component{
                     <Title>Movie App</Title>
                     <CartContainer>
                         <CartIcon src="https://cdn-icons-png.flaticon.com/128/891/891462.png" alt='Cart Item' />
-                        <CartCount>0</CartCount>
+                        <CartCount color='cyan' show={true}>0</CartCount>
                     </CartContainer>
                 </Nav>
             </>
