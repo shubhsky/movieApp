@@ -2,7 +2,7 @@ export const movies = [
     {
       title: "The Shawshank Redemption",
       plot: "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-      poster:'',
+      poster:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEyJLCNDQkmrjLsspA17OsoKIYJc3g3jVRnUU7baU&s',
       price: 249.99,
       rating: 9.3,
       stars: 5,
@@ -12,7 +12,7 @@ export const movies = [
     {
       title: "The Godfather",
       plot: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      poster:'',
+      poster:'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
       price: 299.99,
       rating: 9.2,
       stars: 5,
@@ -22,7 +22,7 @@ export const movies = [
     {
       title: "Pulp Fiction",
       plot: "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-      poster:'',
+      poster:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EWNHerTTuMy0HdGnsxk68IflwjhKpQFKrmjuE4SQ&s',
       price: 349.99,
       rating: 8.9,
       stars: 4,
@@ -32,7 +32,7 @@ export const movies = [
     {
       title: "The Dark Knight",
       plot: "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
-      poster:'',
+      poster:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScFG9r_1VRRXobEVGVebB6xeExtAQNlaESA2Moizzx&s',
       price: 269.99,
       rating: 9.0,
       stars: 4,
@@ -42,7 +42,7 @@ export const movies = [
     {
       title: "Schindler's List",
       plot: "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-      poster:'',
+      poster:'https://c8.alamy.com/comp/BKDNHM/schindlers-list-1994-poster-BKDNHM.jpg',
       price: 449.99,
       rating: 8.9,
       stars: 4,
@@ -52,7 +52,7 @@ export const movies = [
     {
       title: "Forrest Gump",
       plot: "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
-      poster:'',
+      poster:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWMvxesRj74oMXF9V5rhyGUobdZoo1zpURVnqe8JFD&s',
       price: 279.99,
       rating: 8.8,
       stars: 4,
@@ -62,7 +62,7 @@ export const movies = [
     {
       title: "Inception",
       plot: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-      poster:'',
+      poster:'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf5PenC8UyvnX6mOYk5Dx4UHBHnepXx8HQBTtqM6f2jaNUyNoU',
       price: 399.99,
       rating: 8.8,
       stars: 4,
@@ -72,7 +72,7 @@ export const movies = [
     {
       title: "Saving Private Ryan",
       plot: "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
-      poster:'',
+      poster:'https://m.media-amazon.com/images/I/91J04fcf4VL.jpg',
       price: 499.99,
       rating: 8.6,
       stars: 4,

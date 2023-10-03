@@ -9,12 +9,13 @@ export class MovieCard extends React.Component{
         // destructuring
         // console.log(this.props)
         const {movie,addStars,decStars,handleFav}=this.props
-        const {title,plot,price,rating,stars,fav,isIncart} = this.props.movie;
+        const {title,plot,price,rating,stars,fav,isIncart,poster} = this.props.movie;
+        console.log(poster)
         return (
             <div className="main">
                 <div className="movie-card">
                     <div className="left">
-                        <img alt="movieImage" src={avengers}/>
+                        <img alt="movieImage" src={poster}/>
                     </div>
                     <div className="right">
                         <div className="title">{title}</div>
