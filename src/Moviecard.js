@@ -4,48 +4,6 @@ import {avengers} from './images/index'
 export class MovieCard extends React.Component{
     
 
-    // // if we are using arrow function then we dont need to bind the this as it is already binded by arror func
-    // addStars=()=>{
-    //     // this.state.stars += 0.5;
-    //     // console.log(this.state.stars)
-
-
-    //     // forms 1 of setState - here we can directly pass the object
-    //     // this.setState({
-    //     //     stars:this.state.stars + 0.5
-    //     // });
-
-    //     // second form to setState
-    //     this.setState((prvState)=>{
-    //         if (this.state.stars>=5){
-    //             return
-    //         }
-    //         return {
-    //             stars:prvState.stars + 0.5
-    //         }
-    //     });
-
-    // }
-    // decStars=()=>{
-    //     if (this.state.stars<=0){
-    //         return
-    //     }
-    //     this.setState({
-    //         stars:this.state.stars -= 0.5
-    //     })
-    // }
-
-    // handleFav =()=>{
-    //     this.setState({
-    //         fav: !this.state.fav
-    //     })
-    // }
-
-    // handleCart=()=>{
-    //     this.setState({
-    //         isIncart:!this.state.isIncart
-    //     })
-    // }
 
     render(){
         // destructuring
@@ -71,11 +29,10 @@ export class MovieCard extends React.Component{
                                 onClick={()=>{addStars(movie)}}/>
                                 <span className="starCount">{stars}</span>
                             </div>
-                            {/* {fav?<button className="unfavourite-btn" onClick={this.handleFav}>Un-favourite</button>:<button className="favourite-btn" onClick={this.handleFav}>Favourite</button>} */}
 
                             <button className={fav?"unfavourite-btn":'favourite-btn'} onClick={()=>handleFav(movie)}>{fav?"UnFavourite":'Favourite'}</button>
 
-                            <button className={isIncart?"cart-btn":'remove-cart'} onClick={()=>this.props.handleCart(movie)}>{isIncart?'Add to Cart':'Remove from Cart'}</button>
+                            <button className={isIncart?"remove-cart":'cart-btn'} onClick={()=>this.props.handleCart(movie)}>{isIncart?'Remove from Cart':'Add to Cart'}</button>
                         </div>
                     </div>
                 </div>
