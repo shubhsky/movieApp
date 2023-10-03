@@ -45,7 +45,7 @@ const CartCount = styled.span`
 
 class Navbar extends React.Component{
     render(){
-        const {cartCount} = this.props;
+        const {cartCount} = this.props
         return(
             <>
                 <Nav>
